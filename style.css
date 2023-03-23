@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #333;
+    color: white;
+    font-family: 'Fira Code', monospace;
+
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+body>div:nth-child(1){
+    margin: 15px 0;
+}
+
+body>div>button {
+    width: 100px;
+    height: 25px;
+    margin: 5px;
+
+    text-transform: uppercase;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 50px;
+
+    background-color: transparent;
+
+    box-shadow: white 4px 4px 0px;
+    transition: transform 100ms, box-shadow 100ms, background-color 1s;
+}
+
+body>div>button:hover {
+    background-color: white;
+    color: black;
+}
+
+body>div>button:active {
+    border: none;
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #333 0px 0px 0px;
+}
+
+.hide{
+    display: none;
+}
+
+form {
+    border: 1px solid white;
+    border-radius: 10px;
+
+    width: 600px;
+    height: 400px;
+    padding: 20px 0;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 1% 0;
+}
+
+form label {
+    width: 150px;
+}
+
+form input {
+    width: 300px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    padding: 0 5%;
+}
+
+form button {
+    width: 100px;
+    height: 25px;
+    margin: 5px;
+
+    text-transform: uppercase;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 50px;
+
+    background-color: transparent;
+
+    box-shadow: white 4px 4px 0px;
+    transition: transform 100ms, box-shadow 100ms, background-color 1s;
+}
+
+form button:hover {
+    background-color: white;
+    color: black;
+}
+
+form button:active {
+    border: none;
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #333 0px 0px 0px;
+}
